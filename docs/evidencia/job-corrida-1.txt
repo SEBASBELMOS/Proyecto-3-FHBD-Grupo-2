@@ -1,0 +1,28 @@
+Job stackoverflow_medallion, corrida 876410329307627, 2026-11-05
+Duracion total 15m 37s: bronze_ingest 14m 31s, silver_transform 43s, gold_agg 21s
+
+=== bronze_ingest
+Año 2021, meses [1, 2]
+post 2021-01: 325,977 filas en 3.0 min
+post 2021-02: 304,043 filas en 0.4 min
+users 2021-01: 194,555 filas en 1.2 min
+users 2021-02: 180,574 filas en 0.4 min
+=== silver_transform
+Año 2021, meses [1, 2]
+post: 630,020 leídos, 630,020 sin duplicados
+users: 375,129 leídos, 375,129 sin duplicados
+silversbm.stackoverflow.post_hist: 0 nuevos, 630,020 por actualizar
+silversbm.stackoverflow.post_hist: merge con 0 insertados y 630,020 actualizados, 630,020 filas en total
+silversbm.stackoverflow.users_hist: 0 nuevos, 375,129 por actualizar
+silversbm.stackoverflow.users_hist: merge con 0 insertados y 375,129 actualizados, 375,129 filas en total
+silversbm.stackoverflow.post_hist: 0 ids repetidos
+silversbm.stackoverflow.users_hist: 0 ids repetidos
+Silver terminado: 2026-11-05 09:46:48 (hora Colombia)
+=== gold_agg
+Año 2021, meses [1, 2]
+50,448 filas por usuario y mes
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 nuevos, 50,448 por actualizar
+goldsbm.stackoverflow.cant_post_x_user_hist: merge con 0 insertados y 50,448 actualizados, 50,448 filas en total
+if repetidas > 0:
+Posts: 75,849 en Silver y 75,849 en Gold
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 llaves repetidas

@@ -1,0 +1,39 @@
+flowchart LR
+    SRC[("StackOverflow<br/>Parquet público en S3<br/>Posts y Users")]
+
+    subgraph RG["Azure: grupo de recursos rg-sbm-prod-001"]
+        direction LR
+        T1["<b>Tarea 1</b><br/>bronze_ingest<br/>DuckDB + PySpark"]
+        B[("<b>bronze</b><br/>Parquet con overwrite<br/>Crudos por mes<br/>post y users<br/>2021/01 y 2021/02")]
+        T2["<b>Tarea 2</b><br/>silver_transform<br/>PySpark + Delta"]
+        S[("<b>silver</b><br/>Delta con merge<br/>post_hist: 630.020<br/>users_hist: 375.129<br/>Curadas e históricas")]
+        T3["<b>Tarea 3</b><br/>gold_agg<br/>PySpark + Delta"]
+        G[("<b>gold</b><br/>Delta con merge<br/>cant_post_x_user_hist<br/>50.448 filas<br/>Métricas por usuario y mes")]
+        WH["SQL Warehouse<br/>Serverless"]
+
+        T1 -->|"overwrite"| B
+        B -->|"lectura por ruta"| T2
+        T2 -->|"merge por id,<br/>año y mes"| S
+        S -->|"join por dueño<br/>del post"| T3
+        T3 -->|"merge por user_id,<br/>año y mes"| G
+        G --> WH
+
+        subgraph PLAT["Servicios de la plataforma"]
+            direction LR
+            JOB["Databricks Job<br/>stackoverflow_medallion<br/>Un solo Play, Serverless"]
+            UC["Unity Catalog<br/>silversbm y goldsbm"]
+            ADLS["ADLS Gen2<br/>stsbmprod001"]
+            AC["Access Connector"]
+            KV["Key Vault<br/>kvsbm"]
+            AC -.->|"credencial"| UC
+            UC -.->|"tablas externas"| ADLS
+        end
+    end
+
+    PBI["Power BI<br/>Tablero sobre Gold"]
+    DK["DuckDB local<br/>delta_scan con SAS<br/>de solo lectura"]
+
+    SRC -->|"enero y febrero<br/>de 2021"| T1
+    WH -->|"conector Azure<br/>Databricks"| PBI
+    S --> DK
+    G --> DK

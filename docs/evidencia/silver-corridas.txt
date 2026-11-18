@@ -1,0 +1,46 @@
+Corrida 1, meses = 1
+Año 2021, meses [1]
+post: 325,977 leídos, 325,977 sin duplicados
+users: 194,555 leídos, 194,555 sin duplicados
+silversbm.stackoverflow.post_hist: 325,977 nuevos, 0 por actualizar
+silversbm.stackoverflow.post_hist: merge con 325,977 insertados y 0 actualizados, 325,977 filas en total
+silversbm.stackoverflow.users_hist: 194,555 nuevos, 0 por actualizar
+silversbm.stackoverflow.users_hist: merge con 194,555 insertados y 0 actualizados, 194,555 filas en total
+Silver terminado: 2026-11-05 09:06:44 (hora Colombia)
+
+Corrida 2, meses = 2
+Año 2021, meses [2]
+post: 304,043 leídos, 304,043 sin duplicados
+users: 180,574 leídos, 180,574 sin duplicados
+silversbm.stackoverflow.post_hist: 304,043 nuevos, 0 por actualizar
+silversbm.stackoverflow.post_hist: merge con 304,043 insertados y 0 actualizados, 630,020 filas en total
+silversbm.stackoverflow.users_hist: 180,574 nuevos, 0 por actualizar
+silversbm.stackoverflow.users_hist: merge con 180,574 insertados y 0 actualizados, 375,129 filas en total
+silversbm.stackoverflow.post_hist: 0 ids repetidos
+silversbm.stackoverflow.users_hist: 0 ids repetidos
+Silver terminado: 2026-11-05 09:08:03 (hora Colombia)
+
+Corrida 3, meses = 2
+Año 2021, meses [2]
+post: 304,043 leídos, 304,043 sin duplicados
+users: 180,574 leídos, 180,574 sin duplicados
+silversbm.stackoverflow.post_hist: 0 nuevos, 304,043 por actualizar
+silversbm.stackoverflow.post_hist: merge con 0 insertados y 304,043 actualizados, 630,020 filas en total
+silversbm.stackoverflow.users_hist: 0 nuevos, 180,574 por actualizar
+silversbm.stackoverflow.users_hist: merge con 0 insertados y 180,574 actualizados, 375,129 filas en total
+silversbm.stackoverflow.post_hist: 0 ids repetidos
+silversbm.stackoverflow.users_hist: 0 ids repetidos
+Silver terminado: 2026-11-05 09:08:52 (hora Colombia)
+
+Corrida 4, meses = 1,2 (despues de ajustar la lectura de metricas del merge)
+Año 2021, meses [1, 2]
+post: 630,020 leídos, 630,020 sin duplicados
+users: 375,129 leídos, 375,129 sin duplicados
+silversbm.stackoverflow.post_hist: 0 nuevos, 630,020 por actualizar
+silversbm.stackoverflow.post_hist: merge con 0 insertados y 630,020 actualizados, 630,020 filas en total
+silversbm.stackoverflow.users_hist: 0 nuevos, 375,129 por actualizar
+silversbm.stackoverflow.users_hist: merge con 0 insertados y 375,129 actualizados, 375,129 filas en total
+silversbm.stackoverflow.post_hist: 0 ids repetidos
+silversbm.stackoverflow.users_hist: 0 ids repetidos
+Silver terminado: 2026-11-05 09:13:23 (hora Colombia)
+

@@ -1,0 +1,36 @@
+Corrida 1, meses = 1
+Año 2021, meses [1]
+23,736 filas por usuario y mes
+goldsbm.stackoverflow.cant_post_x_user_hist: 23,736 nuevos, 0 por actualizar
+goldsbm.stackoverflow.cant_post_x_user_hist: merge con 23,736 insertados y 0 actualizados, 23,736 filas en total
+Posts: 34,785 en Silver y 34,785 en Gold
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 llaves repetidas
+Gold terminado: 2026-11-05 09:20:16 (hora Colombia)
+
+Corrida 2, meses = 2
+Año 2021, meses [2]
+26,712 filas por usuario y mes
+goldsbm.stackoverflow.cant_post_x_user_hist: 26,712 nuevos, 0 por actualizar
+goldsbm.stackoverflow.cant_post_x_user_hist: merge con 26,712 insertados y 0 actualizados, 50,448 filas en total
+Posts: 41,064 en Silver y 41,064 en Gold
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 llaves repetidas
+Gold terminado: 2026-11-05 09:20:48 (hora Colombia)
+
+Corrida 3, meses = 2
+Año 2021, meses [2]
+26,712 filas por usuario y mes
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 nuevos, 26,712 por actualizar
+goldsbm.stackoverflow.cant_post_x_user_hist: merge con 0 insertados y 26,712 actualizados, 50,448 filas en total
+Posts: 41,064 en Silver y 41,064 en Gold
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 llaves repetidas
+Gold terminado: 2026-11-05 09:21:23 (hora Colombia)
+
+Corrida 4, meses = 1,2
+Año 2021, meses [1, 2]
+50,448 filas por usuario y mes
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 nuevos, 50,448 por actualizar
+goldsbm.stackoverflow.cant_post_x_user_hist: merge con 0 insertados y 50,448 actualizados, 50,448 filas en total
+Posts: 75,849 en Silver y 75,849 en Gold
+goldsbm.stackoverflow.cant_post_x_user_hist: 0 llaves repetidas
+Gold terminado: 2026-11-05 09:21:58 (hora Colombia)
+
